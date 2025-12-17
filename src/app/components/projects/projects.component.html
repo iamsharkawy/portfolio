@@ -1,0 +1,49 @@
+<section class="min-h-screen py-20 px-6 bg-gray-50 dark:bg-gray-900/50 transition-colors duration-300">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-4xl font-bold mb-4 text-center text-gray-900 dark:text-white">My <span
+                class="text-blue-600 dark:text-blue-400">Projects</span></h2>
+        <p class="text-gray-600 dark:text-gray-400 text-center mb-16 max-w-2xl mx-auto">Here are some of the projects
+            I've worked on. Each
+            one presented its own unique challenges and learning opportunities.</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div *ngFor="let project of projects"
+                class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-blue-500/10 border border-gray-200 dark:border-gray-700 group">
+                <!-- Image Placeholder -->
+                <div class="h-48 w-full {{project.image}} flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black/5 dark:bg-black/20 group-hover:bg-black/0 transition-colors">
+                    </div>
+                    <span class="text-gray-500 dark:text-white/50 font-medium">Project Preview</span>
+                </div>
+
+                <div class="p-6">
+                    <h3
+                        class="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        {{
+                        project.title }}</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
+                        {{ project.description }}
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span *ngFor="let tag of project.tags"
+                            class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 rounded border border-gray-200 dark:border-gray-700">
+                            {{ tag }}
+                        </span>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button
+                            class="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg transition-colors">
+                            View Demo
+                        </button>
+                        <button
+                            class="flex-1 px-4 py-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white text-sm rounded-lg transition-colors">
+                            Code
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

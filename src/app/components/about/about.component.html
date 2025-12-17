@@ -1,0 +1,68 @@
+<section class="min-h-screen py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-4xl font-bold mb-16 text-center text-gray-900 dark:text-white">About <span
+                class="text-blue-600 dark:text-blue-400">Me</span></h2>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Image Placeholder -->
+            <div class="relative group">
+                <div
+                    class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200">
+                </div>
+                <div
+                    class="relative bg-white dark:bg-gray-800 rounded-2xl p-1 h-96 w-full flex items-center justify-center overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg dark:shadow-none">
+                    <!-- <span class="text-gray-400 dark:text-gray-500 text-lg">Profile Image Placeholder</span> -->
+                    <img src="assets/profile-pic.jpeg" alt="Profile" class="w-full h-full object-cover rounded-xl" />
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">Who am I?</h3>
+                <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    I am a passionate developer with a keen eye for detail and a drive for creating seamless digital
+                    experiences.
+                    With a strong foundation in modern web technologies, I specialize in building responsive,
+                    accessible, and performant applications.
+                </p>
+                <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    My journey in tech has been driven by curiosity and a constant desire to learn.
+                    Whether it's mastering a new framework or optimizing backend logic, I enjoy the challenge of solving
+                    complex problems.
+                </p>
+
+                <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Featured by Codecademy in their Learner Stories for successfully transitioning from Civil
+                    Engineering to Front-End Engineering, <a
+                        href="https://www.codecademy.com/resources/blog/how-i-went-from-civil-engineering-to-front-end-engineer-in-5-months"
+                        target="_blank"
+                        class="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">Story
+                        Link</a>
+                </p>
+
+                <div class="pt-6">
+                    <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">My Skills</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span *ngFor="let skill of skills"
+                            class="px-4 py-2 bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium border border-gray-200 dark:border-gray-700 hover:border-blue-500 transition-colors cursor-default shadow-sm dark:shadow-none">
+                            {{ skill }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="pt-6">
+                <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Badges</h4>
+                <div class="flex flex-wrap gap-6">
+                    <div data-iframe-width="150" data-iframe-height="270"
+                        data-share-badge-id="e2d64441-4ebe-404e-a136-fc2b15e5c31e"
+                        data-share-badge-host="https://www.credly.com"></div>
+                    <div data-iframe-width="150" data-iframe-height="270"
+                        data-share-badge-id="0c693b13-d294-4620-9b93-f7c123d464f5"
+                        data-share-badge-host="https://www.credly.com"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
