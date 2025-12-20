@@ -11,22 +11,28 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
     projects = [
         {
-            title: 'E-Commerce Dashboard',
+            title: 'Corona',
             description: 'A comprehensive dashboard for managing products, orders, and analytics. Built with Angular and Chart.js.',
-            tags: ['Angular', 'Tailwind', 'Chart.js'],
-            image: 'bg-blue-100 dark:bg-blue-900' // Placeholder class
+            tags: ['HTML', 'CSS', 'JS'],
+            image: 'assets/corona.png',
+            viewDemo: 'https://coronavirus-front-end-project.vercel.app/',
+            code: 'https://github.com/iamsharkawy/Coronavirus-Front-End-Project'
         },
         {
-            title: 'Task Management App',
+            title: 'Bankist',
             description: 'A collaborative task manager with real-time updates and team features.',
-            tags: ['Angular', 'Firebase', 'RxJS'],
-            image: 'bg-purple-100 dark:bg-purple-900'
+            tags: ['HTML', 'CSS', 'JS'],
+            image: 'assets/bankist.png',
+            viewDemo: 'https://bankist-three-blond.vercel.app/',
+            code: 'https://github.com/iamsharkawy/Bankist'
         },
         {
             title: 'Weather Forecast',
             description: 'Beautiful weather application using OpenWeatherMap API with location detection.',
-            tags: ['TypeScript', 'API', 'CSS Grid'],
-            image: 'bg-indigo-100 dark:bg-indigo-900'
+            tags: ['HTML', 'CSS', 'JS'],
+            image: 'assets/weather.png',
+            viewDemo: 'https://weather-app-kappa-red-22.vercel.app/',
+            code: 'https://github.com/iamsharkawy/Weather-App'
         }
     ];
 }

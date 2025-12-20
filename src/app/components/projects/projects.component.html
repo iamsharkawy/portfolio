@@ -9,11 +9,12 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div *ngFor="let project of projects"
                 class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-blue-500/10 border border-gray-200 dark:border-gray-700 group">
-                <!-- Image Placeholder -->
-                <div class="h-48 w-full {{project.image}} flex items-center justify-center relative overflow-hidden">
+                <!-- Project Image -->
+                <div class="h-48 w-full relative overflow-hidden">
+                    <img [src]="project.image" [alt]="project.title"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/5 dark:bg-black/20 group-hover:bg-black/0 transition-colors">
                     </div>
-                    <span class="text-gray-500 dark:text-white/50 font-medium">Project Preview</span>
                 </div>
 
                 <div class="p-6">
@@ -33,14 +34,14 @@
                     </div>
 
                     <div class="flex gap-4">
-                        <button
-                            class="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg transition-colors">
+                        <a [href]="project.viewDemo" target="_blank" rel="noopener noreferrer"
+                            class="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg transition-colors text-center">
                             View Demo
-                        </button>
-                        <button
-                            class="flex-1 px-4 py-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white text-sm rounded-lg transition-colors">
+                        </a>
+                        <a [href]="project.code" target="_blank" rel="noopener noreferrer"
+                            class="flex-1 px-4 py-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white text-sm rounded-lg transition-colors text-center">
                             Code
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
