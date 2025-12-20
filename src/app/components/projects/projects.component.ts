@@ -12,15 +12,15 @@ export class ProjectsComponent {
     projects = [
         {
             title: 'Corona',
-            description: 'A comprehensive dashboard for managing products, orders, and analytics. Built with Angular and Chart.js.',
-            tags: ['HTML', 'CSS', 'JS'],
+            description: 'Responsive site with COVID data and prevention tips.',
+            tags: ['HTML', 'CSS', 'JS', 'Bootstrap'],
             image: 'assets/corona.png',
             viewDemo: 'https://coronavirus-front-end-project.vercel.app/',
             code: 'https://github.com/iamsharkawy/Coronavirus-Front-End-Project'
         },
         {
             title: 'Bankist',
-            description: 'A collaborative task manager with real-time updates and team features.',
+            description: 'A mock banking interface where users log in to view transactions, transfer funds, request loans, and manage accounts.',
             tags: ['HTML', 'CSS', 'JS'],
             image: 'assets/bankist.png',
             viewDemo: 'https://bankist-three-blond.vercel.app/',
@@ -28,7 +28,7 @@ export class ProjectsComponent {
         },
         {
             title: 'Weather Forecast',
-            description: 'Beautiful weather application using OpenWeatherMap API with location detection.',
+            description: 'Beautiful weather application.',
             tags: ['HTML', 'CSS', 'JS'],
             image: 'assets/weather.png',
             viewDemo: 'https://weather-app-kappa-red-22.vercel.app/',

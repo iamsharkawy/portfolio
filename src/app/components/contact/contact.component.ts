@@ -16,10 +16,16 @@ export class ContactComponent {
         message: ''
     };
 
-    onSubmit() {
-        console.log('Form submitted:', this.formData);
-        // Here you would typically handle the form submission
-        alert('Thank you for your message! I will get back to you soon.');
-        this.formData = { name: '', email: '', message: '' };
-    }
+onSubmit() {
+  fetch('https://formspree.io/f/mzdprana', {
+    method: 'POST',
+    headers: { 'Accept': 'application/json' },
+    body: JSON.stringify(this.formData),
+  }).then(() => {
+    alert('Message sent successfully!');
+    this.formData = {name: '', email: '', message: ''};
+  });
+}
+
+
 }
