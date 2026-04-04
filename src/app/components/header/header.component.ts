@@ -8,7 +8,7 @@ import { ThemeService } from '../../services/theme.service';
     standalone: true,
     imports: [CommonModule, RouterLink, RouterLinkActive],
     templateUrl: './header.component.html',
-    styleUrl: './header.css'
+    styleUrl: './header.component.css'
 })
 export class HeaderComponent {
     isMenuOpen = false;

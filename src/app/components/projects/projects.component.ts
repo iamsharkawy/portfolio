@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
     standalone: true,
     imports: [CommonModule],
     templateUrl: './projects.component.html',
-    styleUrl: './projects.css'
+    styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
     projects = [
@@ -33,6 +33,14 @@ export class ProjectsComponent {
             image: 'assets/weather.png',
             viewDemo: 'https://weather-app-kappa-red-22.vercel.app/',
             code: 'https://github.com/iamsharkawy/Weather-App'
+        },
+        {
+          title: 'Book Store',
+          description: 'Books store where you can find, search or add to wishlist any book',
+          tags: ['HTML', 'CSS', 'JS', 'Angular', 'tailwind'],
+          image: 'assets/books-store.png',
+          viewDemo: 'https://books-store-swart.vercel.app/',
+          code: 'https://github.com/iamsharkawy/Books-Library'
         }
     ];
 }
