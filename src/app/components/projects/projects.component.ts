@@ -11,6 +11,14 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
     projects = [
         {
+          title: 'Financial-tracker',
+          description: 'A personal finance management app.',
+          tags: ['HTML', 'SCSS', 'TS', 'Angular', 'Angular Material', 'Chart.js'],
+          image: 'assets/financial-tracker.png',
+          viewDemo: 'https://financial-tracker-tawny-two.vercel.app/dashboard',
+          code: 'https://github.com/iamsharkawy/financial-tracker'
+        },
+        {
             title: 'Corona',
             description: 'Responsive site with COVID data and prevention tips.',
             tags: ['HTML', 'CSS', 'JS', 'Bootstrap'],
