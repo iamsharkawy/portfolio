@@ -10,10 +10,18 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectsComponent {
     projects = [
-        {
+      {
+        title: 'Crypto-Dashboard',
+        description: 'A real-time cryptocurrency price dashboard. Live prices, 7-day history charts, and a searchable coin watchlist.',
+        tags: ['HTML', 'SCSS', 'TS', 'Angular', 'Angular Material', 'Chart.js', 'RxJS', 'CoinGecko API'],
+        image: 'assets/crypto.png',
+        viewDemo: 'https://crypto-dashboard-pink-iota.vercel.app/watchlist',
+        code: 'https://github.com/iamsharkawy/Crypto-Dashboard'
+      },
+      {
           title: 'Financial-tracker',
           description: 'A personal finance management app.',
-          tags: ['HTML', 'SCSS', 'TS', 'Angular', 'Angular Material', 'Chart.js'],
+          tags: ['HTML', 'SCSS', 'TS', 'Angular', 'Angular Material', 'Chart.js', 'RxJS'],
           image: 'assets/financial-tracker.png',
           viewDemo: 'https://financial-tracker-tawny-two.vercel.app/dashboard',
           code: 'https://github.com/iamsharkawy/financial-tracker'
@@ -25,6 +33,14 @@ export class ProjectsComponent {
             image: 'assets/corona.png',
             viewDemo: 'https://coronavirus-front-end-project.vercel.app/',
             code: 'https://github.com/iamsharkawy/Coronavirus-Front-End-Project'
+        },
+        {
+          title: 'Book Store',
+          description: 'Books store where you can find, search or add to wishlist any book',
+          tags: ['HTML', 'CSS', 'JS', 'Angular', 'tailwind'],
+          image: 'assets/books-store.png',
+          viewDemo: 'https://books-store-swart.vercel.app/',
+          code: 'https://github.com/iamsharkawy/Books-Library'
         },
         {
             title: 'Bankist',
@@ -41,14 +57,6 @@ export class ProjectsComponent {
             image: 'assets/weather.png',
             viewDemo: 'https://weather-app-kappa-red-22.vercel.app/',
             code: 'https://github.com/iamsharkawy/Weather-App'
-        },
-        {
-          title: 'Book Store',
-          description: 'Books store where you can find, search or add to wishlist any book',
-          tags: ['HTML', 'CSS', 'JS', 'Angular', 'tailwind'],
-          image: 'assets/books-store.png',
-          viewDemo: 'https://books-store-swart.vercel.app/',
-          code: 'https://github.com/iamsharkawy/Books-Library'
         }
     ];
 }
